@@ -1,0 +1,68 @@
+.a {
+    background-color: black;
+}
+
+.a > p {
+    background-color: green;
+}
+
+.basic-grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: auto;
+
+}
+
+[title] {
+    background-color: green;
+}
+
+.a-template {
+    background-color: green;
+    text-align: center;
+}
+
+section {
+    background-color: green;
+}
+
+.styling {
+    background-color: black;
+}
+
+#page {
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-areas:
+        "head head"
+        "nav  main"
+        "nav  foot";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+}
+
+#page>header {
+    grid-area: head;
+    background-color: #8ca0ff;
+}
+
+#page>nav {
+    grid-area: nav;
+    background-color: #ffa08c;
+}
+
+#page>main {
+    grid-area: main;
+    background-color: #ffff64;
+}
+
+#page>footer {
+    grid-area: foot;
+    background-color: #8cffa0;
+}
+
+#asd {
+
+}
